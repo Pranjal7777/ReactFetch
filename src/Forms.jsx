@@ -85,7 +85,7 @@ export const Form = () => {
                 placeholder="DEPARTMENT"
             />
             <input
-                value={formData.marital}
+                value={formData.arital}
                 id="marital"
                 type="text"
                 onChange={handleChange}
@@ -94,27 +94,6 @@ export const Form = () => {
             <input type="submit" value="Submit your data" />
         </form>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Address</th>
-                    <th>Department</th>
-                    <th>Maritial</th>
-
-                </tr>
-            </thead>
-
-            <tbody>
-                {getFormData.map((elem) =>
-                    <tr key={elem.id} >
-                        <td>{elem.name}</td>
-                        <td>{elem.address}</td>
-                        <td>{elem.department}</td>
-                        <td>{elem.marital}</td>
-                    </tr>)}
-            </tbody>
-
-        </table>
+    </table>
     </>
 }

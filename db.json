@@ -47,6 +47,14 @@
       "department": "CS",
       "marital": "Single",
       "id": 6
+    },
+    {
+      "name": "Tanisha",
+      "age": "23",
+      "address": "454indore",
+      "department": "hr",
+      "marital": "Married",
+      "id": 7
     }
   ]
 }
