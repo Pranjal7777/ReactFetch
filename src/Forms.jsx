@@ -93,47 +93,28 @@ export const Form = () => {
             />
             <input type="submit" value="Submit your data" />
         </form>
-        {/* <h1>Welcome</h1> */}
+
         <table>
             <thead>
                 <tr>
                     <th>Name</th>
-
-
                     <th>Address</th>
                     <th>Department</th>
                     <th>Maritial</th>
 
                 </tr>
-
             </thead>
 
-            {getFormData.map((elem) =>
-
-                <tbody>
-                    <tr>
+            <tbody>
+                {getFormData.map((elem) =>
+                    <tr key={elem.id} >
                         <td>{elem.name}</td>
                         <td>{elem.address}</td>
                         <td>{elem.department}</td>
                         <td>{elem.marital}</td>
-
-                    </tr>
-
-
-                </tbody>
-
-            )
-            }
-        </table>
-        {/* <table>
-            <thead>
-                <tr>Name</tr>
-            </thead>
-            <tbody>
-                <tr><td>{getFormData.name}</td></tr>
+                    </tr>)}
             </tbody>
-        </table> */}
 
-
+        </table>
     </>
 }
